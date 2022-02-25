@@ -1,0 +1,14 @@
+.btn {
+	padding: 0.3rem 0.7rem;
+	border: 2px solid blue;
+	margin: 0.3rem 0;
+}
+.header {
+	width: 100%;
+	text-align: center;
+}
+.title {
+	font-size: 2rem;
+	color: blue;
+	font-style: italic;
+}
