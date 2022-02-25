@@ -1,13 +1,16 @@
 import React from "react";
 import './CardItem.css'
 import coverImg from '../../img/cover.jpg'
-import css from '../../img/css.jpg'
-const CardItem = ()=>{
-
+import { useState ,useEffect} from "react";
+const CardItem = ({card ,click})=>{
+       const  {src , back,front} = card;
+        const cardClick = ()=>{
+            click(card)
+        }
     return (
-        <div className="card initial-back">
+        <div className={`card ${back? 'back':''} ${front?"front":''} `} onClick={cardClick}>
               <img src={coverImg} alt="back img" className="cover-img"/>
-             <img src={css} alt=" css img" className="main-img"/>
+             <img src={src} alt=" css img" className="main-img"/>
         </div>
     )
 }

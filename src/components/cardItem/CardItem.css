@@ -1,7 +1,7 @@
 .card {
 	width: 150px;
 	height: 150px;
-	background-color: blue;
+	background-color: transparent;
 	margin: 0.5rem;
 	position: relative;
 }
@@ -17,4 +17,22 @@
 	height: 100%;
 	top: 0;
 	left: 0;
+}
+.back .main-img {
+	transform: rotateY(90deg);
+	/* transition: transform .05s linear; */
+}
+
+.back .cover-img {
+	transform: rotateY(0deg);
+	/* transition: transform .05s linear; */
+}
+
+.front .cover-img {
+	transform: rotateY(90deg);
+	transition: transform 0.05s linear;
+}
+.front .main-img {
+	transform: rotateY(0deg);
+	transition: transform 0.05s linear;
 }
