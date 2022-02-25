@@ -4,6 +4,7 @@
 	background-color: transparent;
 	margin: 0.5rem;
 	position: relative;
+	cursor: pointer;
 }
 
 .cover-img {
